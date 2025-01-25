@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Time Capsule</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Digital Time Capsule</h1>
+    <p>Create a message for the future and unlock it later!</p>
+  </header>
+
+  <main>
+    <section class="create-capsule">
+      <h2>Create Your Time Capsule</h2>
+      <form id="capsuleForm">
+        <textarea id="message" placeholder="Write your message..." required></textarea>
+        <input type="datetime-local" id="unlockDate" required>
+        <input type="file" id="mediaUpload" accept="image/*,video/*" multiple>
+        <button type="button" onclick="createCapsule()">Save Capsule</button>
+      </form>
+    </section>
+
+    <section class="capsules-list">
+      <h2>Your Capsules</h2>
+      <ul id="capsuleList"></ul>
+      <button onclick="clearData()">Clear All Data</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Digital Time Capsule. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
